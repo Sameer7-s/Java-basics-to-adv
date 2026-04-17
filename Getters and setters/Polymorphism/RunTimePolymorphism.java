@@ -7,7 +7,6 @@ class Animal {
         System.out.println("Animal makes sound");
     }
 }
-
 class Dog extends Animal {
     @Override
     void sound() {
@@ -35,10 +34,5 @@ public class RunTimePolymorphism {
 
         dog.sound();  // Dog barks  // Dynamic method dispatch (means which method it runs or decide)
         cat.sound();  // Cat meows
-       // down casting
-//        double d = 2.354864;
-//        int e  = (int)d;
-//        System.out.println(e);
-//        Dog myDog = (Dog)dog;//down casting
     }
 }
