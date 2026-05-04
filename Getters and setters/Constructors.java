@@ -59,17 +59,17 @@
 //    }
 //}
 
-class Area {
-    double area(double r) { return Math.PI * r * r; }           // Circle
-    double area(double l, double w) { return l * w; }           // Rectangle
-    double area(double b, double h, int t) { return 0.5*b*h; }  // Triangle
-}
-
-public class Constructors {
-    public static void main(String[] args) {
-        Area a = new Area();
-        System.out.println(a.area(5));
-        System.out.println(a.area(4, 6));
-        System.out.println(a.area(3, 8, 1));
-    }
-}
+//class Area {
+//    double area(double r) { return Math.PI * r * r; }           // Circle
+//    double area(double l, double w) { return l * w; }           // Rectangle
+//    double area(double b, double h, int t) { return 0.5*b*h; }  // Triangle
+//}
+//
+//public class Constructors {
+//    public static void main(String[] args) {
+//        Area a = new Area();
+//        System.out.println(a.area(5));
+//        System.out.println(a.area(4, 6));
+//        System.out.println(a.area(3, 8, 1));
+//    }
+//}
