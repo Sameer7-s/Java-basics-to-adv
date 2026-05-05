@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Abstraction/Abstraction.iml" filepath="$PROJECT_DIR$/Abstraction/Abstraction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Abstraction/accessModifier/Destructors/Construtors in java/Construtors in java.iml" filepath="$PROJECT_DIR$/Abstraction/accessModifier/Destructors/Construtors in java/Construtors in java.iml" />
       <module fileurl="file://$PROJECT_DIR$/Abstraction/accessModifier/Destructors/Destructors.iml" filepath="$PROJECT_DIR$/Abstraction/accessModifier/Destructors/Destructors.iml" />
       <module fileurl="file://$PROJECT_DIR$/Encapsulation.iml" filepath="$PROJECT_DIR$/Encapsulation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Abstraction/accessModifier/Destructors/Construtors in java/ExceptionHandling/ExceptionHandling.iml" filepath="$PROJECT_DIR$/Abstraction/accessModifier/Destructors/Construtors in java/ExceptionHandling/ExceptionHandling.iml" />
       <module fileurl="file://$PROJECT_DIR$/practiceJva/Practice.iml" filepath="$PROJECT_DIR$/practiceJva/Practice.iml" />
       <module fileurl="file://$PROJECT_DIR$/Abstraction/accessModifier/accessModifier.iml" filepath="$PROJECT_DIR$/Abstraction/accessModifier/accessModifier.iml" />
     </modules>
