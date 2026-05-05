@@ -73,7 +73,9 @@ finalize called : object is destroyed here
 */
 
 //3. Modern Java Resource Cleanup Program
-//
+
+
+
 class FileResource  implements  AutoCloseable{
     //here implements means when a class wants to use an interface.
     // // Autoclosable is an interface in java
