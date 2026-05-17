@@ -80,6 +80,28 @@
 //        e.display();
 //    }
 //}
+//
+//class Employee{
+//    String name;
+//    int age;
+//
+//    Employee(String name ,int age){
+//        this.name = name;
+//        this.age = age;
+//
+//    }
+//    void display(){
+//        System.out.println("Employee : "+name);
+//        System.out.println("Age : "+age);
+//    }
+//}
+//
+//public  class Main{
+//    public static void main(String[] args) {
+//        Employee e = new Employee("sameer",19);
+//        e.display();
+//    }
+//}
 
 //class Employee{
 //    String name;
@@ -101,43 +123,60 @@
 //    }
 //}
 
-class BankAccount{
-    String accountHolderName;
-    int accountNumber;
-    double balance;
-
-    // parameterized constructor is creating
-
-    BankAccount(String accountHolderName,int accountNumber,double balance){
-        this.accountHolderName = accountHolderName;
-        this.accountNumber = accountNumber;
-        this.balance = balance;
-    }
-    void deposite(double amount){
-        this.balance = this.balance + amount;
-    }
-    void withDraw(double amount){
-        if(amount<=this.balance){
-            this.balance = this.balance - amount;
-        }
-        else{
-            System.out.println("Insufficient account balance");
-        }
-    }
-    void displayAccountDetails(){
-        System.out.println("******************************************************");
-        System.out.println("Account Holder Name "+this.accountHolderName);
-        System.out.println("Account Number : "+this.accountNumber);
-        System.out.println("Balance : "+this.balance);
-        System.out.println("*******************************************************");
-    }
-}
-public class Main {
-    public static void main(String[] args) {
-
-
-    }
-}
+//class BankAccount{
+//    String accountHolderName;
+//    long accountNumber;
+//    double balance;
+//    String branch;
+//    String ifsc_code;
+//
+//    // parameterized constructor is creating
+//
+//    BankAccount(String accountHolderName,long accountNumber,double balance,String branch,String ifsc_code){
+//        this.accountHolderName = accountHolderName;
+//        this.accountNumber = accountNumber;
+//        this.balance = balance;
+//        this.branch = branch;
+//        this.ifsc_code = ifsc_code;
+//    }
+//    void deposite(double amount){
+//        this.balance = this.balance + amount;
+//    }
+//    void withDraw(double amount){
+//        if(amount<=this.balance){
+//            this.balance = this.balance - amount;
+//        }
+//        else{
+//            System.out.println("Insufficient account balance");
+//        }
+//    }
+//    void displayAccountDetails(){
+//        System.out.println("******************************************************");
+//        System.out.println("Account Holder Name "+this.accountHolderName);
+//        System.out.println("Account Number : "+this.accountNumber);
+//        System.out.println("Balance : "+this.balance);
+//        System.out.println("Branch is : "+this.branch);
+//        System.out.println("Ifsc code  : "+this.ifsc_code);
+//        System.out.println("*******************************************************");
+//    }
+//}
+//public class Main {
+//    public static void main(String[] args) {
+//
+//        BankAccount acc1 = new BankAccount("sameer",789877875,50000,"SBI","SBI879XM78");
+//        BankAccount acc2 = new BankAccount("Raj",588488595,80000,"HDFC","HDFCX789");
+//
+//        acc1.deposite(200000);
+//        acc1.withDraw(4400);
+//
+//        acc2.deposite(8000);
+//        acc2.withDraw(870);
+//
+//        acc1.displayAccountDetails();
+//        acc2.displayAccountDetails();
+//
+//    }
+//}
 
 // program 3 (bank details program hard)
 //class BankAccount {
@@ -188,7 +227,69 @@ public class Main {
 //    }
 //}
 
+
+
+
+
+
+
+
+
+
 //  3 COPY CONSTRUCTORS (Copies values from one object to another object)
+
+
+import java.awt.dnd.DragSourceMotionListener;
+//
+//class Student{
+//    String name;
+//    int age;
+//
+//    Student(String name , int age){
+//        this.name = name;
+//        this.age = age;
+//
+//    }
+//    Student(Student oldStudent){
+//        name = oldStudent.name;
+//        age = oldStudent.age;
+//    }
+//    void display(){
+//        System.out.println("Name : "+name);
+//        System.out.println("Age : "+age);
+//    }
+//}
+//public class Main {
+//    public static void main(String[] args) {
+//        Student s1 = new Student("sameer",19);
+//
+//        Student s2 = new Student(s1); // copied value from the object s1 to s2
+//
+//        System.out.println("Original object / parametrize constructors");
+//        s1.display();
+//
+//        System.out.println("copied constructors ");
+//        s2.display();
+//
+//    }
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // program 1 [ easy ]
 //class Student {
@@ -223,7 +324,8 @@ public class Main {
 //}
 
 //Program 2 [easy + medium]
-//
+
+
 //class Laptop {
 //    String brand;
 //    int ram;
@@ -302,6 +404,8 @@ public class Main {
 //    }
 //}
 
+
+
 // 4 private constructors
 //class MathHelper {
 //
@@ -334,9 +438,42 @@ public class Main {
 
 
 
+//class MathHelper{
+//    private MathHelper(){
+//        System.out.println("object creation is not allowed ");
+//    }
+//    static int add(int a , int b){
+//        return a + b;
+//    }
+//    static int multiply(int a , int b){
+//        return a * b;
+//    }
+//}
+//
+//public class Main{
+//    public static void main(String[] args) {
+//        int sum =  MathHelper.add(7,5);
+//        int product = MathHelper.multiply(8 ,8);
+//        System.out.println("Sum is : "+sum);
+//        System.out.println("Product is : "+product);
+//    }
+//}
 
 
+class GFG{
+    private GFG(){
+        System.out.println("Private constructor is called");
+    }
 
+    static  void display(){
+        System.out.println("HEllo from gfg class");
+    }
+}
+public class Main{
+    public static void main(String[] args) {
+        GFG.display();
+    }
+}
 
 
 
@@ -407,6 +544,7 @@ public class Main {
 //
 //    // Constructor  3                 [ Parameterized Constructor]
 //    // It has two parameters
+
 //    Student(String n, int a) {
 //        name = n;
 //        age = a;

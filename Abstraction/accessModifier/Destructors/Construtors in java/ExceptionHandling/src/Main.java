@@ -117,13 +117,48 @@ a/b will work
 // Exception in thread "main" java.lang.ArithmeticException: / by zero
 //	at Demo.main(Main.java:83)
 
-class Demo {
-    public static void main(String[] args) {
-        int a = 5;
-        int b = 0;
-        System.out.println(a / b); // exception
-        // jvm says : new Arithmetic  Exception("/ by Zero"); and throw this
-        // ()--- inside braces the JVM internally pass the message for passing the zero
+//class Demo {
+//    public static void main(String[] args) {
+//        int a = 5;
+//        int b = 0;
+//        System.out.println(a / b); // exception
+//        // jvm says : new Arithmetic  Exception("/ by Zero"); and throw this
+//        // ()--- inside braces the JVM internally pass the message for passing the zero
+//
+//    }
+//}
 
-    }
-}
+
+//class Demo {
+//    public static void main(String[] args) {
+//        int a = 5;
+//        int b = 0;
+//
+//        methodA(a,b);
+//
+//
+//    }
+//    private static void methodA(int a , int b){
+//        methodB(a , b);
+//    }
+//    private static void  methodB(int a , int b){
+//        System.out.println(a/b);
+//    }
+//}
+/*
+this throw this error
+
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at Demo.methodB(Main.java:145)
+	at Demo.methodA(Main.java:142)
+	at Demo.main(Main.java:137)
+
+Process finished with exit code 1
+*/
+
+// so here concept arise we don't want default method error throw by the compile
+//  so we want we handel the exceptions
+
+
+
+
